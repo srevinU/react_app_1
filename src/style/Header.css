@@ -1,18 +1,18 @@
 
 .content {
-    display: flex !important;
-    height: 50px;
+    display: inline-flex !important;
+    margin: 0 !important;
+    max-width: unset;
+    padding: 0px, 25px, 0px, 25px;
 }
 
 .content .info {
-    position: absolute !important;
-    width: 500px !important;
-    left: 25px !important;
+    width: 650px !important;
+    margin: 0 !important;
 }
 
 .content .search {
-    position: absolute !important;
-    width: 500px !important;
-    right: 25px !important;
+    width: 350px !important;
+    min-width: 350px !important;
+    margin: 0 !important;
 }
-
