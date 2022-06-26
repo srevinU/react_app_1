@@ -1,0 +1,18 @@
+
+.content {
+    display: flex !important;
+    height: 50px;
+}
+
+.content .info {
+    position: absolute !important;
+    width: 500px !important;
+    left: 25px !important;
+}
+
+.content .search {
+    position: absolute !important;
+    width: 500px !important;
+    right: 25px !important;
+}
+
