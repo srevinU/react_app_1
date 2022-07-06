@@ -3,12 +3,12 @@
     display: inline-flex !important;
 }
 
-.btn-group {
+.footer .btn-group {
     right: 25px !important;
     position: absolute !important; 
 }
 
-.btn {
+.footer .btn-group .btn {
     margin-left: 5px !important;
 }
 

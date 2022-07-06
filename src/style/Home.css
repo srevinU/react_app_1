@@ -1,4 +1,5 @@
 .home {
     height: 100% !important;
-    padding: 25px;
+    padding: 25px !important;
+    margin-left: 150px !important;
 }

@@ -2,15 +2,28 @@
     height: 100% !important;
     width: 150px !important;
     min-width: 150px !important;
-    margin: 0 !important;
     position: fixed !important;
+    padding-top: 10px !important;
 }
 
-.btn-menu {
+.menu .btn-group-menu {
+    width: 100% !important;    
+    display: contents !important;
+}
+
+.menu .btn-group-menu .btn-menu {
+    width: 100%;
     background-color: transparent !important;
     border: none !important;
+    padding: 10px !important;
+    font-weight: 700;
 }
 
-.btn-group-menu {
-    display: inline-block !important;
+.menu .btn-group-menu .btn-menu:hover {
+    color: rgba(34, 37, 41, 0.6) !important;
+    transition: color 500ms linear;
+}
+
+.menu .btn-group-menu .btn-menu:focus {
+    box-shadow: none !important;
 }

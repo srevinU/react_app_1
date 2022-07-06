@@ -4,7 +4,7 @@ export const themesSettings = {
     app: 'gainsboro',
     logo: 'white',
     header: 'dark',
-    footer: 'dark',
+    footer: 'transparent',
     menu: 'white',
     menu_btn: 'black'
   },
@@ -12,7 +12,7 @@ export const themesSettings = {
     app: 'gainsboro',
     logo: 'black',
     header: 'light',
-    footer: 'light',
+    footer: 'transparent',
     menu: 'black',
     menu_btn: 'white'
   }
