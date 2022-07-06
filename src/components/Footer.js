@@ -19,7 +19,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <>
-                <Navbar bg={this.props.theme} fixed="bottom">
+                <Navbar bg={this.props.theme.footer} fixed="bottom">
                     <Container className="footer">
                         <ToggleButtonGroup type="radio" name="radio">
                             {this.state.radioButtons.map((radio, idx) => (

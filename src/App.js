@@ -5,26 +5,32 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import { Container } from 'react-bootstrap';
 import './style/App.css';
+import { themesSettings } from './configuration/themes.js';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      theme: 'light',
-      color: 'black'
+      themes: themesSettings,
     }
   }
   changeTheme = (color) => {
-    this.setState({theme: color});
+    console.log('color asked', color);
+    this.setState(prevState => ({
+      themes: {
+        ...prevState.themes,
+        activeTheme: color
+      }
+    }));
   }
   render() {
-      return <div className="App">
-        <Header theme={this.state.theme}/>
+      return <div className="App" style={{ backgroundColor: this.state.themes[this.state.themes.activeTheme].app }}>
+        <Header theme={ this.state.themes[this.state.themes.activeTheme] }/>
           <Container className='main'>
-            <Menu/>
+            <Menu theme={ this.state.themes[this.state.themes.activeTheme] }/>
             <Home/>
           </Container>
-        <Footer theme={this.state.theme} changeTheme={this.changeTheme}/>
+        <Footer theme={ this.state.themes[this.state.themes.activeTheme] } changeTheme={this.changeTheme}/>
       </div>
     }
 }
