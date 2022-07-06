@@ -1,3 +1,14 @@
 .footer {
-    height: 25px;
+    height: 50px;
+    display: inline-flex !important;
 }
+
+.btn-group {
+    right: 25px !important;
+    position: absolute !important; 
+}
+
+.btn {
+    margin-left: 5px !important;
+}
+

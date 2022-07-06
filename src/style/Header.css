@@ -2,8 +2,8 @@
 .content {
     display: inline-flex !important;
     margin: 0 !important;
-    max-width: unset;
-    padding: 0px, 25px, 0px, 25px;
+    max-width: unset !important;
+    padding: 0px, 25px, 0px, 25px !important;
 }
 
 .content .info {
@@ -15,4 +15,9 @@
     width: 350px !important;
     min-width: 350px !important;
     margin: 0 !important;
+}
+
+.content .profile {
+    width: 0px !important;
+    display: none;
 }
