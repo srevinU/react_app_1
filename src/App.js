@@ -15,7 +15,6 @@ export default class App extends React.Component {
     }
   }
   changeTheme = (color) => {
-    console.log('color asked', color);
     this.setState(prevState => ({
       themes: {
         ...prevState.themes,

@@ -6,12 +6,14 @@ export const themesSettings = {
     header: 'dark',
     footer: 'dark',
     menu: 'white',
+    menu_btn: 'black'
   },
   light: {
-    app: 'white',
+    app: 'gainsboro',
     logo: 'black',
     header: 'light',
     footer: 'light',
-    menu: 'gainsboro',
+    menu: 'black',
+    menu_btn: 'white'
   }
 }

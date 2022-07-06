@@ -1,6 +1,16 @@
 .menu {
     height: 100% !important;
-    width: 250px !important;
-    min-width: 250px !important;
+    width: 150px !important;
+    min-width: 150px !important;
     margin: 0 !important;
+    position: fixed !important;
+}
+
+.btn-menu {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.btn-group-menu {
+    display: inline-block !important;
 }
