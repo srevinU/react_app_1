@@ -8,8 +8,8 @@ build-backend:
 	docker build -t ${BACK_IMG_NAME} ./backend/.
 
 start-frontend:
-	docker run -it --rm -v ${PWD}/frontend/:/app -p 8080:8081 -e CHOKIDAR_USEPOLLING=true ${FRONT_IMG_NAME}
+	docker run -it --rm -v ${PWD}/frontend/:/app -p 3000:3000 -e CHOKIDAR_USEPOLLING=true ${FRONT_IMG_NAME}
 
 start-backend:
-	docker run -it --rm -v ${PWD}/backend/:/app -p 3000:3000 -e CHOKIDAR_USEPOLLING=true ${BACK_IMG_NAME}
+	docker run -it --rm -v ${PWD}/backend/:/app -p 8080:8080 -e CHOKIDAR_USEPOLLING=true ${BACK_IMG_NAME}
 
