@@ -1,12 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
-<<<<<<< Updated upstream
 make: Entering directory `/Users/cedric/dev/perso/react/react_app_1'
 docker build -t my-react-app-frontend:dev ./frontend/.
-docker run -it --rm -v /Users/cedric/dev/perso/react/react_app_1/frontend/:/app -v frontend/app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true my-react-app-frontend:dev
 make: Leaving directory `/Users/cedric/dev/perso/react/react_app_1'
-=======
-make: Entering directory `/Users/cedricsegura/dev/perso/Reactjs/react_app_1'
-docker build -t my-react-app-frontend:dev ./frontend/.
-make: Leaving directory `/Users/cedricsegura/dev/perso/Reactjs/react_app_1'
->>>>>>> Stashed changes
  
