@@ -1,4 +1,4 @@
-import { Sequelize, DataTypes, Model, UUIDV4 } from 'sequelize';
+import { Sequelize, DataTypes, Model } from 'sequelize';
 const SequelizeUid = require('sequelize');
 
 export const Test = (sequelize: Sequelize) => {
