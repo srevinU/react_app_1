@@ -10,10 +10,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Wed Jul 13 19:06:03 2022
+# Make data base, printed on Thu Jul 21 18:20:28 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -94,6 +95,7 @@ MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 .VARIABLES := 
 # environment
 TMPDIR = /var/folders/p_/qqp0q2cs3zd2bbh0qy4dp1040000gn/T/
+ 
 # automatic
 *F = $(notdir $*)
 # environment
@@ -143,9 +145,9 @@ VSCODE_PID = 93390
 
 # Directories
 
-# . (device 16777234, inode 17210632): 8 files, no impossibilities.
+# . (device 16777234, inode 17210632): 10 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -171,18 +173,35 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-11 20:02:59
+#  Last modified 2022-07-13 21:13:14
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-start-frontend:
+start-backend:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  commands to execute (from `Makefile', line 14):
+	docker run -it --rm -v ${PWD}/backend/:/app -p 8080:8080 -e CHOKIDAR_USEPOLLING=true ${BACK_IMG_NAME}
+	
+
+build-backend:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 8):
-	docker run -it --rm -v ${PWD}/frontend/:/app -p 3001:3000 -e CHOKIDAR_USEPOLLING=true ${FRONT_IMG_NAME}
+	docker build -t ${BACK_IMG_NAME} ./backend/.
+	
+
+start-frontend:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 11):
+	docker run -it --rm -v ${PWD}/frontend/:/app -p 3000:3000 -e CHOKIDAR_USEPOLLING=true ${FRONT_IMG_NAME}
 	
 
 # Not a target:
@@ -200,7 +219,7 @@ build-frontend:
 	
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/18=0%
+# Load=8/1024=1%, Rehash=0, Collisions=1/20=5%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -212,6 +231,6 @@ build-frontend:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jul 13 19:06:03 2022
+# Finished Make data base on Thu Jul 21 18:20:28 2022
 
  

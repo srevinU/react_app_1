@@ -10,7 +10,11 @@
   "author": "Gost",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.3",
+    "sqlite3": "^5.0.9"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.6",

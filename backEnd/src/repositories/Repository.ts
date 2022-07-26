@@ -1,24 +1,23 @@
-class Repository {
-    sysId: String | undefined;
-    readonly tableName: String | undefined;
-    constructor() { 
-    }
+import { Sqlz } from "../databases/squelise/Sqlz"
+import { Test } from "../databases/squelise/models/Test"
 
-    get(): any {
-        return null;
-    }
-
-    post(): any {
-        return null;
-    }
-
-    put(): any {
-        return null;
-    }
-
-    delete(): any {
-        return null;
-    }
+export class Repository {
+    Sqlz = new Sqlz();
+    model = Test;
 
     
+
+    async getAll() {
+        this.Sqlz.register();
+        // There should be my query
+        this.Sqlz.disconect();
+    }
+ 
+}
+
+try {
+    const test = new Repository();
+    test.getAll();
+} catch (err) {
+    console.log(err)
 }
