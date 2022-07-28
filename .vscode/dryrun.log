@@ -1,5 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/cedric/dev/perso/react/react_app_1'
+make: Entering directory `/Users/cedricsegura/dev/perso/Reactjs/react_app_1'
 docker build -t my-react-app-frontend:dev ./frontend/.
-make: Leaving directory `/Users/cedric/dev/perso/react/react_app_1'
+make: Leaving directory `/Users/cedricsegura/dev/perso/Reactjs/react_app_1'
  

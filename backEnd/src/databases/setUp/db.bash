@@ -34,6 +34,9 @@ checkError
 psql postgres -c "CREATE DATABASE ${dbName} WITH ENCODING 'UTF8'
                   TEMPLATE template0"
 checkError
+# Extension creation
+psql ${dbName} -U postgres -c 'CREATE EXTENSION IF NOT EXISTS "uuid-ossp"'
+checkError
 displayInfo "Database" $dbName "Created"
 
 # Category table creation
@@ -43,6 +46,18 @@ displayInfo "Table" $table "setUp"
 psql ${dbName} -U postgres -c "CREATE TABLE ${table}(
   sys_uuid uuid DEFAULT uuid_generate_v4()
   ,u_name VARCHAR(50) NOT NULL
+  ,PRIMARY KEY (sys_uuid)
+);"
+checkError
+displayInfo "Table" $table "Created"
+
+# Category table creation
+table='t_message'
+displayInfo "Table" $table "setUp"
+# psql ${dbName} -U postgres -c "DROP TABLE IF EXISTS ${table}"
+psql ${dbName} -U postgres -c "CREATE TABLE ${table}(
+  sys_uuid uuid DEFAULT uuid_generate_v4()
+  ,u_content VARCHAR(50) NOT NULL
   ,PRIMARY KEY (sys_uuid)
 );"
 checkError

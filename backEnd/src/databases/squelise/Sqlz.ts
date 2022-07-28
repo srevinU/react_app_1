@@ -1,7 +1,7 @@
-import { Sequelize } from "sequelize";
+import { Sequelize } from 'sequelize';
 
 export class Sqlz {
-    private db: Sequelize = new Sequelize(
+    public db: Sequelize = new Sequelize(
         'db_react_app_1', 'postgres', '', {
             host: 'localhost',
             dialect: 'postgres'
@@ -14,11 +14,9 @@ export class Sqlz {
             .catch((err: Error) => console.log('Unable to connect to the database:', err))
     }
 
-    async disconect(): Promise<void> {
+    async disconnect(): Promise<void> {
         this.db.close()
             .then(() => console.log('Disconnection has been established successfully.'))
             .catch((err) => console.log('Unable to disconnect to the database:', err))
-
     }
-
 }

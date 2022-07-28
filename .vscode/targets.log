@@ -6,19 +6,17 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Thu Jul 21 18:20:28 2022
+# Make data base, printed on Wed Jul 27 10:43:10 2022
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
+# environment
+NVM_INC = /Users/cedricsegura/.nvm/versions/node/v14.19.0/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -26,7 +24,7 @@ make: *** No rule to make target `all'.  Stop.
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/cedric/dev/perso/react/react_app_1
+CURDIR := /Users/cedricsegura/dev/perso/Reactjs/react_app_1
 # makefile
 SHELL = /bin/sh
 # environment
@@ -40,35 +38,41 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /Users/cedric/.pub-cache/bin:/opt/homebrew/bin:/Users/cedric/dev/.flutter/bin:/Users/cedric/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+PATH = /Users/cedricsegura/.nvm/versions/node/v14.19.0/bin:/Applications/ServiceNow CLI/bin:/opt/homebrew/bin/flutter:/opt/homebrew/bin:/Users/cedricsegura/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/ServiceNow CLI/bin:/Users/cedricsegura/Library/Application Support/JetBrains/Toolbox/scripts
 # makefile (from `Makefile', line 1)
 FRONT_IMG_NAME = my-react-app-frontend:dev
+# environment
+NVM_BIN = /Users/cedricsegura/.nvm/versions/node/v14.19.0/bin
+# environment
+LaunchInstanceID = C028DB88-F553-495C-B390-23FB2E7E47E6
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1Nek9qllcn/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Bw8fiZVDeq/Listeners
 # automatic
 %F = $(notdir $%)
 # makefile (from `Makefile', line 2)
 BACK_IMG_NAME = my-react-app-backend:dev
 # environment
-PWD = /Users/cedric/dev/perso/react/react_app_1
+PWD = /Users/cedricsegura/dev/perso/Reactjs/react_app_1
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/cedric
+HOME = /Users/cedricsegura
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/cedric/Library/Application Support/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+VSCODE_CODE_CACHE_PATH = /Users/cedricsegura/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
-LOGNAME = cedric
+LOGNAME = cedricsegura
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+NVM_CD_FLAGS = -q
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -84,7 +88,7 @@ SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
-USER = cedric
+USER = cedricsegura
 # makefile
 .DEFAULT_GOAL := build-frontend
 # automatic
@@ -94,12 +98,11 @@ MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/p_/qqp0q2cs3zd2bbh0qy4dp1040000gn/T/
- 
+TMPDIR = /var/folders/5v/gnwqm5w123gcrsfx_fl5p6140000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/cedric/Library/Application Support/Code/1.69.0-main.sock
+VSCODE_IPC_HOOK = /Users/cedricsegura/Library/Application Support/Code/1.69.2-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -111,7 +114,9 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.18176550.18176556
+NVM_DIR = /Users/cedricsegura/.nvm
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12688981.12688987
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -126,6 +131,8 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186b3
 # automatic
 ^F = $(notdir $^)
 # default
@@ -135,9 +142,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 93390
+VSCODE_PID = 606
 # variable set hash-table stats:
-# Load=60/1024=6%, Rehash=0, Collisions=1/83=1%
+# Load=66/1024=6%, Rehash=0, Collisions=1/89=1%
 
 # Pattern-specific Variable Values
 
@@ -145,9 +152,9 @@ VSCODE_PID = 93390
 
 # Directories
 
-# . (device 16777234, inode 17210632): 10 files, no impossibilities.
+# . (device 16777231, inode 10145916): 12 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -173,7 +180,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-13 21:13:14
+#  Last modified 2022-07-26 10:36:31
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -183,7 +190,6 @@ start-backend:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  commands to execute (from `Makefile', line 14):
 	docker run -it --rm -v ${PWD}/backend/:/app -p 8080:8080 -e CHOKIDAR_USEPOLLING=true ${BACK_IMG_NAME}
 	
@@ -231,6 +237,8 @@ build-frontend:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jul 21 18:20:28 2022
+# Finished Make data base on Wed Jul 27 10:43:10 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+
