@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Wed Jul 27 10:43:10 2022
+# Make data base, printed on Thu Jul 28 19:20:52 2022
 
 # Variables
 
@@ -66,7 +66,7 @@ HOME = /Users/cedricsegura
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/cedricsegura/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /Users/cedric/Library/Application Support/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # environment
 LOGNAME = cedricsegura
 # environment
@@ -98,11 +98,11 @@ MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/5v/gnwqm5w123gcrsfx_fl5p6140000gn/T/
+TMPDIR = /var/folders/p_/qqp0q2cs3zd2bbh0qy4dp1040000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/cedricsegura/Library/Application Support/Code/1.69.2-main.sock
+VSCODE_IPC_HOOK = /Users/cedric/Library/Application Support/Code/1.69.1-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -114,9 +114,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-NVM_DIR = /Users/cedricsegura/.nvm
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.12688981.12688987
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.18548665.18548671
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -142,7 +140,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 606
+VSCODE_PID = 41660
 # variable set hash-table stats:
 # Load=66/1024=6%, Rehash=0, Collisions=1/89=1%
 
@@ -152,9 +150,9 @@ VSCODE_PID = 606
 
 # Directories
 
-# . (device 16777231, inode 10145916): 12 files, no impossibilities.
+# . (device 16777234, inode 17210632): 11 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -237,7 +235,7 @@ build-frontend:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jul 27 10:43:10 2022
+# Finished Make data base on Thu Jul 28 19:20:52 2022
 
  
 make: *** No rule to make target `all'.  Stop.
